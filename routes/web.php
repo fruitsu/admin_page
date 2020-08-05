@@ -5,8 +5,6 @@ Route::get('/', function () {
 });
 
 
-Route::get('/home', 'HomeController@index')->name('home');
-
 Auth::routes(['register' => false]);
 
 require_once('web.admin.php');
