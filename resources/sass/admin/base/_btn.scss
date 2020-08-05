@@ -1,0 +1,18 @@
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    &-round {
+        padding: 0.25rem;
+        line-height: 1.25rem;
+        width: 1.75rem;
+        height: 1.75rem;
+        border-radius: 9999px;
+        text-align: center;
+    }
+
+    svg {
+        fill: currentColor;
+    }
+}

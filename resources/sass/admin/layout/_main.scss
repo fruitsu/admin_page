@@ -1,0 +1,10 @@
+main {
+    background-color: #fff;
+    padding: 1.25rem;
+    border-radius: $border-radius;
+    max-width: 1200px;
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      padding: 2.5rem;
+    }
+  }

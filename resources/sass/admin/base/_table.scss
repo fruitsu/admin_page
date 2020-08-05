@@ -1,0 +1,33 @@
+.table {
+  thead {
+    display: none;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      display: table-header-group;
+    }
+  }
+
+  tr {
+    margin-bottom: 10px;
+    display: block;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      margin-bottom: 0;
+      display: table-row;
+    }
+
+    td {
+      display: block;
+
+      @media (max-width: map_get($grid-breakpoints, sm)) {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      @media (min-width: map_get($grid-breakpoints, sm)) {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
+}
